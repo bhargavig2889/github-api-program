@@ -1,0 +1,12 @@
+.container-display
+{
+ margin-top:20px;
+ width:50%;
+ display:flex;
+ justify-content:flex-start;
+ font-family: 'Courier New', Courier, monospace;
+}
+.profile-photo{
+    width:200px;
+    height:auto;
+}
