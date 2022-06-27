@@ -1,12 +1,13 @@
 .container-display
 {
- margin-top:20px;
+ margin:auto;
  width:50%;
- display:flex;
- justify-content:flex-start;
  font-family: 'Courier New', Courier, monospace;
+ display:flex;
+ justify-content:space-evenly ;
 }
-.profile-photo{
-    width:200px;
-    height:auto;
+
+#profilephoto{
+    width:100%;
+    height: 100px;;
 }
