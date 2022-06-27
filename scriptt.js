@@ -1,7 +1,7 @@
 var searchbutton = document.getElementById("search");
 searchbutton.addEventListener("click", getProfile);
 
-var profilephoto=document.getElementsByClassName("profile-photo");
+var image=document.getElementsByClassName("img");
 var user_name = document.getElementById("user-name");
 var followers = document.getElementById("followers");
 var following = document.getElementById("following");
@@ -20,18 +20,22 @@ async function getProfile() {
         gitHubProfileDetails = await response.json();
         console.log(gitHubProfileDetails);
 
-        var profilephoto =document.createElement("img");
-        profilephoto.setAttribute('src', gitHubProfileDetails.avatar_url);
+       // var img =document.createElement("img");
+        img.setAttribute('src', gitHubProfileDetails.avatar_url);
        // console.log(profilephoto)
-        var anchor = document.createElement("anchor");
+        //var anchor = document.createElement("anchor");
         anchor.setAttribute('href', gitHubProfileDetails.html_url);
         anchor.setAttribute('target', '_blank');
         //console.log(anchor)
-        anchor.appendChild(profilephoto);
+        anchor.appendChild(img);
         display.append(anchor);
 
         user_name.innerText = "name " + gitHubProfileDetails.name;
         followers.innerText = "followers " + gitHubProfileDetails.followers;
         following.innerText = "following " + gitHubProfileDetails.following;
         repositary.innerText = "repositary " + gitHubProfileDetails.public_repos;
-}
+        
+    }
+
+
+
