@@ -1,0 +1,23 @@
+.container-display
+{
+ margin:auto;
+ width:50%;
+ font-family: 'Courier New', Courier, monospace;
+ box-shadow: 5px 5px 10px 2px rgb(109, 97, 97);
+ background-color: beige;
+ padding: 20px;
+ display:flex;
+ justify-content:space-evenly ;
+}
+
+#profilephoto{
+    width:100%;
+    height: auto;;
+}
+body{
+background-color:antiquewhite;
+}
+.deatils
+{
+    margin: 25px;
+}
